@@ -1,21 +1,12 @@
-<div style="text-align: center"> 
-
 # Projeto Integrador
 
 **Cyber Edux, Cuiabá-MT**
 
 **Curso de Capacitação em Python (2023-2024)**
 
-</div>
-
-<div style="text-align: justify">
-
-<div style="padding-left: 5%; padding-right: 5%">
-
-**Resumo**
+#### Resumo
 
 Este repositório é o *template* do projeto integrador do curso de capacitação em Python oferecido pela Cyber Edux de setembro de 2023 a março de 2024. O projeto consiste em um *web-app* de gestão acadêmica desenvolvido em Python com o framework Django. O presente documento descreve os requisitos básicos do projeto e o sistema de avaliação, além de dar sugestões de recursos adicionais que podem ser implementados pelo aluno.
-</div>
 
 ## 1. Introdução
 
@@ -31,5 +22,3 @@ Este documento está organizado da seguinte forma:
 ## 3. Sugestões de recursos adicionais
 
 ## 4. Método de avaliação
-
-</div>
