@@ -69,7 +69,7 @@ Os critérios desta seção são referentes aos requisitos básicos da atividade
 
 | Componente da nota | Critério |
 |:-:|:-:|
-|$C_1$|Uso de alguma biblioteca gráfica que não seja necessariamente um *framework web*. Ex: Streamlit, Tkinter e Qt|
+|$C_1$|Construção de uma interface gráfica (com ou sem um *framework web*)|
 |$C_2$|Uso de um *framework web*, como Django ou Flask|
 |$C_3$|Páginas HTML|
 |$C_4$|Entrada e saída de dados nas páginas|
