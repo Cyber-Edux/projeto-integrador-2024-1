@@ -81,10 +81,10 @@ Os critérios desta seção são referentes aos requisitos básicos da atividade
 | 1 | Critério satisfeito |
 
 **Cálculo da nota final da seção C:**
-$$C_\text{final} = \frac{\min(2C_1+4C_2, 4) + C_3 + C_4 + C_5 + C_6}{8}$$
+$$C_\text{final} = \frac{2C_1 + 2C_2 + C_3 + C_4 + C_5 + C_6}{8}$$
 
 Observações:
-* caso o componente $C_2$ seja satisfeito, o componente $C_1$ automaticamente também é satisfeito. No entanto, mesmo que ambos os componentes seja satisfeitos, a nota que se soma ao $C_\text{final}$ por esses dois requisitos não passa de 4.
+* caso o componente $C_2$ seja satisfeito, o componente $C_1$ automaticamente também é satisfeito.
 * se o componente $C_1$ tiver nota 0, as seções C, D e E são zeradas.
 * se o componente $C_3$ tiver nota 0, não há como atribuir nota 1 para os componentes $C_4$ e $C_5$.
   
