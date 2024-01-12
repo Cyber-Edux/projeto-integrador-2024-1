@@ -39,7 +39,7 @@ Critérios de acordância com o escopo da atividade.
 | Nota no componente da seção A | Descrição |
 |:-:|:-:|
 | 0.85 | Critério não satisfeito |
-| 0.1 | Critério satisfeito |
+| 1 | Critério satisfeito |
 
 **Cálculo da nota final da seção A:**
 $$A_\text{final} = \frac{A_1 + A_2}{2}$$
