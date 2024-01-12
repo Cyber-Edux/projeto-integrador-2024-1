@@ -69,7 +69,7 @@ Os critérios desta seção são referentes aos requisitos básicos da atividade
 
 | Componente da nota | Critério |
 |:-:|:-:|
-|$C_1$|Construção de uma interface gráfica (com ou sem um *framework web*)|
+|$C_1$|Construção de uma interface gráfica (com ou sem um *framework web*), ou uma API *web*|
 |$C_2$|Uso de um *framework web*, como Django ou Flask|
 |$C_3$|Páginas HTML|
 |$C_4$|Entrada e saída de dados nas páginas|
@@ -84,6 +84,7 @@ Os critérios desta seção são referentes aos requisitos básicos da atividade
 $$C_\text{final} = \frac{\min(2C_1+4C_2, 4) + C_3 + C_4 + C_5 + C_6}{8}$$
 
 Observações:
+* caso o componente $C_2$ seja satisfeito, o componente $C_1$ automaticamente também é satisfeito. No entanto, mesmo que ambos os componentes seja satisfeitos, a nota que se soma ao $C_\text{final}$ por esses dois requisitos não passa de 4.
 * se o componente $C_1$ tiver nota 0, as seções C, D e E são zeradas.
 * se o componente $C_3$ tiver nota 0, não há como atribuir nota 1 para os componentes $C_4$ e $C_5$.
   
