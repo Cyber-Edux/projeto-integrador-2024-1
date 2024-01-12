@@ -4,6 +4,7 @@
 
 **Curso de Capacitação em Python (2023-2024)**
 
+
 #### Resumo
 
 Este repositório é o *template* do projeto integrador do curso de capacitação em Python oferecido pela Cyber Edux de setembro de 2023 a março de 2024. O projeto consiste em um *web-app* de gestão acadêmica desenvolvido em Python com o framework Django. O presente documento descreve os requisitos básicos do projeto e o sistema de avaliação, além de dar sugestões de recursos adicionais que podem ser implementados pelo aluno.
@@ -24,22 +25,27 @@ Além de implementar o projeto, o aluno deve elaborar uma pequena documentação
 
 ## 4. Método de avaliação
 
+A avaliação é feita por com sistema de avaliação onde há critérios e escalas pré-definidos. Os critérios de avaliação e as escalas de pontuação estão separados em seções. Para cada seção, há uma fórmula de cálculo de nota da seção, que é sempre de 0 a 1. A nota final do projeto do aluno será calculada como uma soma ponderada das notas das seções.
+
 ### Critérios de avaliação
-
-* **Seção A** - critérios de acordância com o escopo da atividade. 
-* **Seção B** - esta seção contempla os critérios técnicos mais básicos possíveis. Caso o aluno apresente um projeto que, mesmo que não satisfaça os requisitos básicos da atividade, faça uso de uma parte dos conceitos aprendidos no curso, as notas desta seção garantem que a nota final deste aluno não seja zero.
-* **Seção C** - os critérios desta seção são referentes aos requisitos básicos da atividade.
-* **Seção D** - critérios de **qualidade de *software***, como usabilidade e tolerância a erros do usuário, entram nessa seção.
-* **Seção E** - esta seção contempla as qualidades do projeto que extrapolam os requisitos básicos.
-
 #### Seção A
+Critérios de acordância com o escopo da atividade. 
 
 | Componente da nota | Critério |
 |:-:|:-:|
 |$A_1$|Acordância com o escopo *gestão acadêmica*|
 |$A_2$|Acordância com o tipo de projeto proposto: sistema *web*|
 
+| Nota no componente da seção A | Descrição |
+|:-:|:-:|
+| 0.85 | Critério não satisfeito |
+| 0.1 | Critério satisfeito |
+
+**Cálculo da nota final da seção A:**
+$$A_\text{final} = \frac{A_1 + A_2}{2}$$
+
 #### Seção B
+Esta seção contempla os critérios técnicos mais básicos possíveis. Caso o aluno apresente um projeto que, mesmo que não satisfaça os requisitos básicos da atividade, faça uso de uma parte dos conceitos aprendidos no curso, as notas desta seção garantem que a nota final deste aluno não seja zero.
 
 | Componente da nota | Critério |
 |:-:|:-:|
@@ -48,24 +54,26 @@ Além de implementar o projeto, o aluno deve elaborar uma pequena documentação
 |$B_3$|Uso de coleções de dados (lista, tupla, dicionário e conjunto)|
 |$B_4$|Uso de recursos de manipulação de arquivos|
 |$B_5$|Conexão com um banco de dados|
-|$B_6$|Uso de alguma biblioteca gráfica que não seja um *framework web*, como Streamlit, Tkinter ou Qt|
 
-| Nota no componente da seção A | Descrição |
+
+| Nota no componente da seção B | Descrição |
 |:-:|:-:|
 | 0 | Critério não satisfeito |
 | 1 | Critério satisfeito |
 
 **Cálculo da nota final da seção B:**
-$$B_\text{final} = \frac{B_1 + B_2 + B_3 + \min(B_4 + 2B_5, 2) + 3B_6}{8}$$
+$$B_\text{final} = \frac{B_1 + B_2 + B_3 + \min(B_4 + 2B_5, 2)}{5}$$
 
 #### Seção C
+Os critérios desta seção são referentes aos requisitos básicos da atividade.
 
 | Componente da nota | Critério |
 |:-:|:-:|
-|$C_1$|Uso de um *framework web*, como Django ou Flask|
-|$C_2$|Páginas HTML|
-|$C_3$|Entrada e saída de dados nas páginas|
-|$C_4$|Estilização com CSS|
+|$C_1$|Uso de alguma biblioteca gráfica que não seja necessariamente um *framework web*. Ex: Streamlit, Tkinter e Qt|
+|$C_2$|Uso de um *framework web*, como Django ou Flask|
+|$C_3$|Páginas HTML|
+|$C_4$|Entrada e saída de dados nas páginas|
+|$C_5$|Estilização com CSS|
 
 | Nota no componente da seção C | Descrição |
 |:-:|:-:|
@@ -73,12 +81,14 @@ $$B_\text{final} = \frac{B_1 + B_2 + B_3 + \min(B_4 + 2B_5, 2) + 3B_6}{8}$$
 | 1 | Critério satisfeito |
 
 **Cálculo da nota final da seção C:**
-$$C_\text{final} = \frac{4C_1 + C_2 + C_3 + C_4 + C_5}{8}$$
+$$C_\text{final} = \frac{\min(2C_1+4C_2, 4) + C_3 + C_4 + C_5 + C_6}{8}$$
 
 Observações:
 * se o componente $C_1$ tiver nota 0, as seções C, D e E são zeradas.
-* se o componente $C_2$ tiver nota 0, não há como atribuir nota 1 para os componentes $C_3$ e $C_4$.
+* se o componente $C_3$ tiver nota 0, não há como atribuir nota 1 para os componentes $C_4$ e $C_5$.
+  
 #### Seção D
+Critérios de **qualidade de *software***, como usabilidade e tolerância a erros do usuário, entram nessa seção.
 
 | Componente da nota | Critério |
 |:-:|:-:|
@@ -99,10 +109,41 @@ Observações:
 $$D_\text{final} = \frac{D_1 + D_2 + D_3 + D_4}{12}$$
 
 #### Seção E
+Esta seção contempla as qualidades do projeto que extrapolam os requisitos básicos do ponto de vista técnico (técnicas e tecnologias utilizadas).
 
 | Componente da nota | Critério | Descrição |
 |:-:|:-:|:-:|
 |$E_1$ | Páginas responsivas | Páginas responsivas são aquelas que podem ser usadas com facilidade em qualquer dispositivo (smartphone, tablet ou PC), pois se ajustam ao tamanho da tela. |
 |$E_2$ | Uso de tecnologias extras | O uso de tecnologias não exigidas nos requisitos básicos, como um *framework* CSS, JavaScript e consumo de APIs, é recompensado neste critério.  |
-|$E_3$ | Relevância e complexidade do problema resolvido | Há uma ampla gama de problemas computacionais que podem ser resolvidos no âmbito da gestão acadêmica, como problemas de logística (alocação de recursos), problemas de análise de dados e automatização de processos morosos. Caso o aluno cumpra todos os requisitos básicos e desenvolva uma solução para um problema real, sua iniciativa é recompensada com esta nota, que é dada de acordo com a relevância e a complexidade do problema escolhido. |
-|$E_4$ | Relevância da solução desenvolvida | Qualquer problema computacional pode ter múltiplas soluções possíveis, e uma dessas soluções pode ser melhor do que as outras. A nota $E_4$ é definida de acordo com o quão bem o projeto do aluno resolve o problema que ele escolheu. |
+
+| Nota no componente da seção E | Descrição |
+|:-:|:-:|
+| 0 | Critério não satisfeito |
+| 1 | Critério parcialmente satisfeito |
+| 2 | Critério satisfeito |
+
+**Cálculo da nota final da seção E:**
+$$E_\text{final} = \frac{E_1 + E_2}{2}$$
+
+#### Seção F
+Esta seção contempla as qualidades da ideia do projeto.
+
+| Componente da nota | Critério | Descrição |
+|:-:|:-:|:-:|
+|$F_3$ | Relevância e complexidade do problema resolvido | Há uma ampla gama de problemas computacionais que podem ser resolvidos no âmbito da gestão acadêmica, como problemas de logística (alocação de recursos), problemas de análise de dados e automatização de processos morosos. Caso o aluno cumpra todos os requisitos básicos e desenvolva uma solução para um problema real, sua iniciativa é recompensada com esta nota, que é dada de acordo com a relevância e a complexidade do problema escolhido. |
+|$F_4$ | Relevância da solução desenvolvida | Qualquer problema computacional pode ter múltiplas soluções possíveis, e uma dessas soluções pode ser melhor do que as outras. A nota $E_4$ é definida de acordo com o quão bem o projeto do aluno resolve o problema que ele escolheu. |
+
+| Nota no componente da seção F | Descrição |
+|:-:|:-:|
+| 0 | Baixa relevância - problema ou solução simples e sem aplicabilidade prática ou com aplicabilidade muito limitada. |
+| 1 | Relevância moderada - problema ou solução de complexidade baixa com grande aplicabilidade prática. |
+| 2 | Relevância alta - problema ou solução de complexidade média com grande aplicabilidade prática. |
+| 3 | Relevância muito alta - apenas para casos excepcionais, em que a complexidade do problema ou solução é alta e tem grande aplicabilidade prática. |
+
+
+**Cálculo da nota final da seção F:**
+$$F_\text{final} = \frac{F_1 + F_2}{2}$$
+
+### Cálculo na nota final
+
+$$N_\text{final} = A_\text{final}\left(4B_\text{final} + 3C_\text{final} + 2D_\text{final} + \frac{1}{2}E_\text{final} + \frac{1}{2}F_\text{final}\right)$$
