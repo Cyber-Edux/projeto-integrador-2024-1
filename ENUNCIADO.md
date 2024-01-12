@@ -131,7 +131,7 @@ Esta seção contempla as qualidades da ideia do projeto.
 | Componente da nota | Critério | Descrição |
 |:-:|:-:|:-:|
 |$F_1$ | Relevância e complexidade do problema resolvido | Há uma ampla gama de problemas computacionais que podem ser resolvidos no âmbito da gestão acadêmica, como problemas de logística (alocação de recursos), problemas de análise de dados e automatização de processos morosos. Caso o aluno cumpra todos os requisitos básicos e desenvolva uma solução para um problema real, sua iniciativa é recompensada com esta nota, que é dada de acordo com a relevância e a complexidade do problema escolhido. |
-|$F_2$ | Relevância da solução desenvolvida | Qualquer problema computacional pode ter múltiplas soluções possíveis, e uma dessas soluções pode ser melhor do que as outras. A nota $E_4$ é definida de acordo com o quão bem o projeto do aluno resolve o problema que ele escolheu. |
+|$F_2$ | Relevância da solução desenvolvida | Qualquer problema computacional pode ter múltiplas soluções possíveis, e uma dessas soluções pode ser melhor do que as outras. A nota $F_2$ é definida de acordo com o quão bem o projeto do aluno resolve o problema que ele escolheu. |
 
 | Nota no componente da seção F | Descrição |
 |:-:|:-:|
